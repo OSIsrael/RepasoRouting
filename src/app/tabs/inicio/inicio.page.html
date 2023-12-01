@@ -13,4 +13,10 @@
   <ion-button routerLink="../nudo">
     VIAJE A PAGINA 2
   </ion-button>
+  <ion-item>
+    <ion-label position="floating">Ingrese un número</ion-label>
+    <ion-input [(ngModel)]="numeroIngresado" type="number"></ion-input>
+  </ion-item>
+  
+  <ion-button (click)="enviarNumero()">Enviar Número</ion-button>
 </ion-content>
